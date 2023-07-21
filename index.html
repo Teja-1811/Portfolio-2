@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhanu's Portfolio</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bubbles CSS -->
+    <link rel="stylesheet" href="bubbles.css">
+    <!-- WELCOME CSS -->
+    <link rel="stylesheet" href="welcome.css">
+    <!-- Tablet View CSS -->
+    <link rel="stylesheet" href="tablet.css">
+    <!-- Mobile View CSS -->
+    <link rel="stylesheet" href="mobile.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="my_page.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- typed effect js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+</head>
+
+<body onload="greeting()">
+    <div class="body d-none" id="hide">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+        <div class="bubble x11"></div>
+        <div class="bubble x12"></div>
+        <div class="bubble x13"></div>
+        <div class="bubble x14"></div>
+        <div class="row justify-content-center m-0">
+            <div class="col-sm-6 col-lg-5 col-12 col-md-6">
+                <div class="m-10">
+                    <div class="sign">
+                        <span class="fast-flicker">w</span>el<span class="flicker">c</span>ome
+                    </div>
+                    <div class="text-end">
+                        <button class="btn-hover color" type="button" onclick="show()">Visit Profile</button>
+                        <div class="mickey text-start">
+                            <img src="img/mickey.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="show" class="d-non">
+        <input type="checkbox" class="theme" id="check" hidden>
+        <div id="page">
+            <header class="p-1">
+                <button onclick="check()" class="button"><i class="bi bi-brightness-high-fill" id="icon-1" style="color: #f7f7f7;"></i><i class="bi bi-moon-fill" id="icon-2" style="display: none;"></i></button>
+                <div class="greeting" id="greet">
+                    <p class="m-auto p-2"><strong>Hii Hello! <span id="greeting"></span></strong></p>
+                </div>
+                <nav class=".nav">
+                    <div class="inner-nav">
+                        <ul class="m-auto navbar navbar-list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                        </ul>
+                        <ul class="m-auto navbar" id="nav-btn">
+                            <li>
+                                <button class="btn nav-btn" type="button" onclick="navbar()" style="color: #f7f7f7;">
+                                <i class="bi bi-list" id="list"></i>
+                                <i class="bi bi-x-lg d-none" id="close"></i>
+                            </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="p-3">
+                <section class="m-4 p-5 container-lg flex-grow-1" id="home">
+                    <div class="row">
+                        <div class="card col-sm-6 col-lg-5 col-12 col-md-6 m-auto b-none">
+                            <div class="info p-1">
+                                <div class="name">
+                                    <span class="first-text">I am </span>
+                                    <span class="second-text">Bhanu Teja</span>
+                                </div>
+                                <div class="h-text">
+                                    <div class="h-animate">
+                                        <p class="text first-text">I'm a &nbsp;</p>
+                                        <span class="text sec-text"></span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3 mb-2 mx-1">
+                                    <div class="instagram social m-auto">
+                                        <a href="https://www.instagram.com/bhanutej.2001/" target="_blank"><i class="bi bi-instagram"></i></a>
+                                    </div>
+                                    <div class="facebook social m-auto">
+                                        <a href="https://www.facebook.com/bhanu182001" target="_blank"><i class="bi bi-facebook"></i></a>
+                                    </div>
+                                    <div class="twitter social m-auto">
+                                        <a href="https://twitter.com/sivabhanu123" target="_blank"><i class="bi bi-twitter"></i></a>
+                                    </div>
+                                    <div class="whatsapp social m-auto">
+                                        <a href="https://wa.me/+918978021756" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                    <div class="github social m-auto">
+                                        <a href="https://github.com/bhanu-182001" target="_blank"><i class="bi bi-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-4 col-lg-3 col-10 col-md-4 m-auto b-none">
+                            <div class="image m-50">
+                                <div>
+                                    <img src="img/Naidu Bhanu Teja.jpg" alt="Bhanu Teja">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-5" id="about">
+                    <h4 class="text-center bg-light p-2 about" style="border-radius: 20px;">About Me</h4>
+                    <div class="about-me">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-5 col-12 col-md-6 m-auto text-center">
+                                <img src="img/12.jpeg" alt="Bhanu Teja" class="image-1">
+                            </div>
+                            <div class="col-sm-6 col-lg-5 col-12 col-md-6 m-auto data">
+                                <p><strong>Name : </strong>Naidu Bhanu Teja</p>
+                                <p><strong>DOB : </strong>18/November/2001</p>
+                                <p><strong>Age : </strong></p>
+                                <p><strong>Address : </strong>
+                                    <address>
+                                        H.No 10-92 <br>
+                                        B.C Colony, Gundugolanu (V), <br>
+                                        Bhimadolu Mandal, <br>
+                                        Eluru Dist, <br>
+                                        Andhra Pradesh, <br>
+                                        India <br>
+                                        Pin Code : 534427
+                                    </address>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-1">
+                            <div class="d-flex in-about">
+                                <div class="ms-1 dot"></div>
+                                <h5 class="m-auto">About Me</h5>
+                                <div class="me-1 dot"></div>
+                            </div>
+                            <p><q>B.Sc Computer Science graduate with 8.46 CGPA from Andhra Loyola College, Vijayawada with aptitude skills and communication skills. Seeking for Developer position to pursue my dreams and build and boost my career. I worked as an intern and working as Freelancer </q></p>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-5" id="education">
+                    <h4 class="text-center bg-light p-2 education">Education & Skills</h4>
+                    <div class="container-lg">
+                        <div class="row">
+                            <div class="card col-sm-6 col-lg-5 col-12 col-md-6 text-center m-auto mb-4">
+                                <div class="card-header bg-warning">
+                                    <h5>Programming Languages</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/programming.jpg" alt="programming" class="p-img-1">
+                                    <div class="div">
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>JSON</li>
+                                            <li>Django (Framework)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-sm-6 col-lg-5 col-12 col-md-6 text-center m-auto mb-4">
+                                <div class="card-header bg-success">
+                                    <h5>Skills</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/skills.avif" alt="skills" class="p-img-1">
+                                    <div class="div">
+                                        <ul>
+                                            <li>Communication</li>
+                                            <li>Problem Solving</li>
+                                            <li>Aptitude</li>
+                                            <li>Reasoning</li>
+                                            <li>Time Management</li>
+                                            <li>Team Management</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-sm-6 col-lg-5 col-12 col-md-6 text-center m-auto mb-4">
+                                <div class="card-header bg-danger">
+                                    <h5>Graduation</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/university-student-graduation-png-22.png" alt="Graduation Cap" class="p-img">
+                                    <div class="div">
+                                        <ul>
+                                            <li>Bachelor of Computer Science</li>
+                                            <li>2020 - 2023</li>
+                                            <li>Andhra Loyola College, Vijayawada</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-sm-6 col-lg-5 col-12 col-md-6 text-center m-auto mb-4">
+                                <div class="card-header bg-warning">
+                                    <h5>Intermediate</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/university-student-graduation-png-22.png" alt="Graduation Cap" class="p-img">
+                                    <div class="div">
+                                        <ul>
+                                            <li>Maths, Physics & Chemistry</li>
+                                            <li>2018 - 2020</li>
+                                            <li>Sir.C.R.Reddy College, Eluru</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-sm-6 col-lg-5 col-12 col-md-6 text-center m-auto">
+                                <div class="card-header">
+                                    <h5>Metriculation</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/university-student-graduation-png-22.png" alt="Graduation Cap" class="p-img">
+                                    <div class="div">
+                                        <ul>
+                                            <li>SSC/Metriculation</li>
+                                            <li>2017 - 2018</li>
+                                            <li>Andhra Pradesh Residential School, Appalarajugudem</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-sm-6 col-lg-5 col-12 col-md-6 text-center m-auto">
+                                <div class="card-header bg-info">
+                                    <h5>Languages</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/Languages.jpg" alt="languages image" class="p-img-1">
+                                    <div class="div">
+                                        <ul>
+                                            <li>English</li>
+                                            <li>Telugu</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-4" id="work">
+                    <h4 class="text-center bg-light p-2 work">Work</h4>
+                    <div class="row">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <img src="img/codegnan.png" alt="codegnan" class="logo">
+                                <ul class="intern">
+                                    <li>Codegnan IT Solutions (Internship)</li>
+                                    <li>August - November (2022)</li>
+                                    <li>Worked as an intern in Codegnan IT Solutions.</li>
+                                    <li>Learned Python Programming and Django Framework.</li>
+                                    <li>Web Designing and Developing using HTML, CSS and JS.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-4" id="projects">
+                    <h4 class="text-center bg-light p-2 project">Projects</h4>
+                    <div class="row">
+                        <div class="card text-center col-sm-6 col-lg-5 col-12 col-md-6 m-auto mb-4">
+                            <div class="card-header bg-success">
+                                <h5>Project - 1</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/temp.jpg" alt="programming" class="p-img-1">
+                                <div class="project-1">
+                                    <h6 class="m-2" style="text-decoration: underline;">Personal Portfolio (V-1)</h6>
+                                    <ul>
+                                        <li><strong>Languages : </strong>HTML and CSS</li>
+                                        <li><strong>Published On : August-2022</strong></li>
+                                    </ul>
+                                    <div class="d-flex">
+                                        <a href="#" class="btn btn-outline-info text-center m-auto ms-0 fw-bolder">Visit</a>
+                                        <a href="https://github.com/bhanu-182001/My_Profile" class="btn btn-outline-success text-center m-auto me-0 fw-bolder">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-center col-sm-6 col-lg-5 col-12 col-md-6 m-auto mb-4">
+                            <div class="card-header bg-warning">
+                                <h5>Project - 2</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/time up.jpg" alt="programming" class="p-img">
+                                <div class="project-1">
+                                    <h6 class="m-2" style="text-decoration: underline;">Timer</h6>
+                                    <ul>
+                                        <li><strong>Languages : </strong>Python</li>
+                                        <li><strong>GUI : </strong>Tkinter</li>
+                                        <li><strong>Published On : October-2022</strong></li>
+                                    </ul>
+                                    <div class="d-flex">
+                                        <a href="https://github.com/bhanu-182001/Count_Down_Timer" class="btn btn-outline-success text-center m-auto me-0 fw-bolder">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-center col-sm-6 col-lg-5 col-12 col-md-6 m-auto mb-4">
+                            <div class="card-header bg-danger">
+                                <h5>Project - 3</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/cms.png" alt="programming" class="p-img-1">
+                                <div class="project-1">
+                                    <h6 class="m-2" style="text-decoration: underline;">Timer</h6>
+                                    <ul>
+                                        <li><strong>Languages : </strong>Python, HTML, CSS, Javascript, JQuery</li>
+                                        <li><strong>Framework : </strong>Django</li>
+                                        <li><strong>Web Techonology : </strong>Bootstrap-5</li>
+                                        <li><strong>Database : </strong>SQL & MySQL</li>
+                                        <li><strong>Published On : December-2022</strong></li>
+                                    </ul>
+                                    <div class="d-flex">
+                                        <a href="https://github.com/bhanu-182001/College_Management_Web_Application" class="btn btn-outline-success text-center m-auto me-0 fw-bolder">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-center col-sm-6 col-lg-5 col-12 col-md-6 m-auto mb-4">
+                            <div class="card-header bg-info">
+                                <h5>Project - 4</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/Screenshot (142).png" alt="programming" class="p-img-1">
+                                <div class="project-1">
+                                    <h6 class="m-2" style="text-decoration: underline;">Personal Portfolio (V-2)</h6>
+                                    <ul>
+                                        <li><strong>Languages : </strong>HTML, CSS, Javascript, JQuery</li>
+                                        <li><strong>Web Techonology : </strong>Bootstrap-5</li>
+                                        <li><strong>Published On : July-2023</strong></li>
+                                    </ul>
+                                    <div class="d-flex">
+                                        <a href="#" class="btn btn-outline-info text-center m-auto ms-0 fw-bolder">Visit</a>
+                                        <a href="#" class="btn btn-outline-success text-center m-auto me-0 fw-bolder">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact">
+                    <h4 class="text-center bg-light p-2 contact">Contact</h4>
+                    <div class="row">
+                        <div class="card text-center col-sm-6 col-lg-5 col-12 col-md-6 m-auto mb-4 touch">
+                            <div class="card-body">
+                                <h5 style="color: #f7f7f7;">Get In Touch</h5>
+                                <div class="contact-1">
+                                    <div>
+                                        <span>
+                                            <i class="bi bi-telephone-fill"></i>
+                                            <a href="tel: +918978021756">Take Call</a>
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <span>
+                                            <i class="bi bi-envelope-fill"></i>
+                                            <a href="mailto: sivabhanu123456789@gmail.com">Send Mail to Me</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-center col-sm-4 col-lg-4 col-6 col-md-4 m-auto social-1">
+                            <div class="card-body">
+                                <h5 style="color: #f7f7f7;">Social Media</h5>
+                                <div class="d-flex justify-content-center">
+                                    <div class="instagram social m-auto">
+                                        <a href="https://www.instagram.com/bhanutej.2001/" target="_blank"><i class="bi bi-instagram"></i></a>
+                                    </div>
+                                    <div class="facebook social m-auto">
+                                        <a href="https://www.facebook.com/bhanu182001" target="_blank"><i class="bi bi-facebook"></i></a>
+                                    </div>
+                                    <div class="twitter social m-auto">
+                                        <a href="https://twitter.com/sivabhanu123" target="_blank"><i class="bi bi-twitter"></i></a>
+                                    </div>
+                                    <div class="whatsapp social m-auto">
+                                        <a href="https://wa.me/+918978021756" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="text-center">
+                <div>
+                    <p class="m-0">Designed By <strong>Bhanu Teja</strong> <i class="bi bi-vector-pen"></i></p>
+                    <p class="m-0">===================</p>
+                    <p class="m-0"><i class="bi bi-c-circle"></i> Copy Rights Reserved 2023 <span></span></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        var typed = new Typed('.sec-text', {
+            strings: ["Freelancer..", "Web Developer..", "Python Developer.."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

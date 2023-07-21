@@ -1,0 +1,66 @@
+@media (max-width: 767px) {
+    /* Welcome */
+    .sign {
+        margin-left: 0%;
+        font-size: 3em
+    }
+    .btn-hover {
+        margin-left: 50%;
+    }
+    .mickey img {
+        margin-top: -40%;
+        margin-left: -10%;
+    }
+    .navbar {
+        display: block !important;
+    }
+    .navbar li {
+        list-style-type: none;
+    }
+    .inner-nav {
+        display: flex;
+    }
+    .navbar-list {
+        display: none !important;
+        text-align: center;
+        padding: 2%;
+    }
+    .navbar-list li {
+        background-color: var(--text-color);
+        width: 100px;
+        font-size: 13px;
+    }
+    .navbar-list li:hover {
+        background-color: var(--bg-color);
+        font-size: 15px;
+    }
+    .navbar-list li a {
+        text-decoration: none;
+        color: var(--bg-color);
+    }
+    .navbar-list li a:hover {
+        color: var(--text-color);
+    }
+    .navbar-list li:hover {
+        border-bottom: 2px solid var(--text-color);
+    }
+    #nav-btn {
+        display: block !important;
+        margin: 0 !important;
+    }
+    body {
+        font-size: 15px !important;
+    }
+    .social {
+        padding: 1% 3%;
+        font-size: 18px;
+        font-weight: 800px;
+        border-radius: 20px;
+    }
+    .data {
+        margin: 10% !important;
+    }
+    .m-50 {
+        margin-top: 40px !important;
+    }
+}
