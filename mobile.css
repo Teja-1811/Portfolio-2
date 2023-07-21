@@ -64,6 +64,13 @@
         margin-top: 40px !important;
     }
     .ml-10 {
+<<<<<<< HEAD
         margin-left: 10% !important;
+=======
+        margin-left: 0% !important;
+    }
+    .m-t {
+        margin-top: 0 !important;
+>>>>>>> 4aa61290c6b2141b774a2b71c75a340ab84d469a
     }
 }
