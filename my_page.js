@@ -7,7 +7,10 @@ show = () => {
 }
 
 greeting = () => {
+    // Greeting
+
     const greet = document.querySelector("#greeting");
+    const myAge = document.querySelector("#age");
     const time = new Date();
 
     if (time.getHours() < 12) {
@@ -18,6 +21,26 @@ greeting = () => {
         greet.innerHTML = "Good Evening!";
     } else {
         greet.innerHTML = "Good Night!";
+    }
+
+    // Age
+    var age ;
+    const birthDay = new Date(2001, 10, 18);
+    const age1 = time.getFullYear() - birthDay.getFullYear();
+    if(birthDay.getMonth() > time.getMonth()){
+        age = age1 - 1;
+        myAge.innerHTML = age + " Years";
+    } else if(birthDay.getMonth() == time.getMonth()){
+        if(birthDay.getDate() > time.getDate()){
+            age = age1;
+            myAge.innerHTML = age + " Years";
+        } else {
+            age = age1 - 1;
+            myAge.innerHTML = age + " Years";
+        }
+    }else {
+        age = age1;
+        myAge.innerHTML = age + " Years";
     }
 }
 
