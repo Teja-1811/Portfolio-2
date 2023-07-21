@@ -64,6 +64,9 @@
         margin-top: 40px !important;
     }
     .ml-10 {
-        margin-left: -100% !important;
+        margin-left: 0% !important;
+    }
+    .m-t {
+        margin-top: 0 !important;
     }
 }
