@@ -20,16 +20,16 @@
 
 @-moz-keyframes animateBubble {
     0% {
-        margin-top: 1000px;
+        margin-top: 10px;
     }
     100% {
-        margin-top: -100%;
+        margin-top: -10%;
     }
 }
 
 @keyframes animateBubble {
     0% {
-        margin-top: 1000px;
+        margin-top: 50px;
     }
     100% {
         margin-top: -100%;
@@ -83,7 +83,7 @@
     animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
     left: 5%;
     top: 80%;
-    -webkit-transform: scale(0.4);
+    -webkit-transform: scale(0.8);
     -moz-transform: scale(0.4);
     transform: scale(0.4);
 }
