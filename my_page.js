@@ -92,3 +92,11 @@ navbar = () => {
     list.classList.toggle("d-none");
     close.classList.toggle("d-none");
 }
+
+age = () => {
+    const birthDay = new Date(2001,10, 18);
+    const today = new Date();
+
+    const age = today.getFullYear() - birthDay.getFullYear();
+    
+}
